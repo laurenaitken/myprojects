@@ -1,0 +1,134 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Become a Reviewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Become a Reviewer!</h1>
+    <p id="description">Fill in this short form to tell us a bit about yourself</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">Enter your full name: <input id="name" name="full-name" type="text" required class="inline" placeholder="e.g. Kylie Minogue" /></label>
+      <label id="email-label" for="email">Enter a valid email address: <input id="email" name="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required class="inline" placeholder="e.g. kylie@minogue.com" /></label>
+      <label id="number-label" for="number">Enter your age (in years): <input id="number" name="age" type="number" min="18" max="120" placeholder="e.g. 25" \><legend id="age">Please note: you must be 18 to apply.</legend></label>
+      </fieldset>
+      <fieldset>
+      <legend>With which gender identity do you identify? </legend>
+      <label for="woman"><input id="woman" value="woman" type="radio" name="gender" checked /> Woman</label>
+      <label for="man"><input id="man" value="man" type="radio" name="gender" /> Man</label>
+      <label for="trans"><input id="trans" value="trans" type="radio" name="gender" /> Trans/Non-Binary</label>
+      <label for="other"><input id="other" value="other" type="radio" name="gender" /> Other</label>
+      <label for="prefer"><input id="prefer" value="prefer not to say" type="radio" name="gender" /> Prefer not to say</label>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">In which region do you currently live?<select id="dropdown" name="region">
+        <option value="">(select one)</option>
+        <option value="1">North East</option>
+        <option value="2">North West</option>
+        <option value="3">Yorkshire and the Humber</option>
+        <option value="4">East Midlands</option>
+        <option value="5">West Midlands</option>
+        <option value="6">East of England</option>
+        <option value="7">London</option>
+        <option value="8">South East</option>
+        <option value="9">South West</option>
+        <option value="10">Wales</option>
+        <option value="11">Scotland</option>
+        <option value="12">Northern Ireland</option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset><legend for="show">Which of the following are you interested in reviewing?</legend>
+        <label for="theatre">
+          <input id="theatre" type="checkbox" value="theatre" name="show"  /> Theatre</label>
+        <label for="comedy"><input id="comedy" type="checkbox" value="comedy" name="show" /> Comedy</label>
+        <label for="dance"><input id="dance" type="checkbox" value="dance" name="show" /> Dance</label>
+        <label for="drag"><input id="drag" type="checkbox" value="drag" name="show" /> Drag / Cabaret / Burlesque</label>
+        <label for="opera"><input id="opera" type="checkbox" value="opera" name="show" /> Opera</label>
+        </fieldset>
+        <label for="info">Why would you like to be a reviewer? <textarea id="info" name="info" rows="15" cols="40" placeholder="Write your answer here..."></textarea></label>
+        <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="terms-and-conditions" />I accept the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">terms and conditions</a></label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to right, hotpink, indigo);
+  color: gainsboro;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 70vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%
+  min-height: 2em;
+  color: black;
+}
+
+input, textarea {
+  background-color: black
+  border: 1px solid;
+  font-color: black;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: cornflowerblue;
+  border-color: white;
+  min-width: 300px;
+  margin-top: 25px;
+}
+
+legend[id="age"] {
+  font-size: 0.75em;
+  margin-top: 7px;
+}
+
+
+
+** end of undefined **
